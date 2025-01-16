@@ -33,11 +33,15 @@ Our system focuses on **Subtask 1 (ST1)**: Text classification for food hazard p
    git clone https://github.com/Zhennor/Semeval-Task9-The-Food-Hazard-Detection-Challenge-2025
    cd Semeval-Task9-The-Food-Hazard-Detection-Challenge-2025
    ```
-2. Install necessary libraries:
+2. DOCKER
+2.1 Build Docker Image
    ```bash
-   pip install -r requirements.txt
+   docker build -t semeval-food-hazard-detection:latest .
    ```
-
+2.2 Run Docker Container
+   ```bash
+   docker run --name SemevalTask9 -it semeval-food-hazard-detection:latest
+   ```
 3. Train model:
    # Model Training Documentation
 
